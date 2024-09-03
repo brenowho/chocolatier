@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolatier - Linha Premium</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=WindSong:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header id="header" class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <img src="img/logo.svg" alt="Logo Chocolatier" id="logo-header" class="img-fluid">
+                <nav id="menu">
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li><a href="#cta-section">Home</a></li>
+                        <li><a href="#pricing">Assinatura</a></li>
+                        
+                    </ul>
+                </nav>
+                <div id="countdown-header" class="d-flex">
+                    <div class="countdown-item">
+                        <div id="days" class="countdown-number">00</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="hours" class="countdown-number">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="minutes" class="countdown-number">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="seconds" class="countdown-number">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="cta-section">
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2 class="cta-heading">Sabor Premium<br> Momentos Inesquecíveis</h2>
+                <p>Imagina receber, diretamente na sua casa, uma seleção cuidadosamente escolhida dos melhores
+                    chocolates do Brasil. Nossa equipe de especialistas em chocolataria seleciona mensalmente uma
+                    variedade de chocolates premium, com sabores únicos e texturas irresistíveis, para criar uma
+                    experiência gastronômica inesquecível.</p>
+
+            </div>
+            <button class="button">Eleve Seu Paladar!</button>
+        </div>
+        <img id="main-image" src="img/photo.jpeg" alt="Chocolatier Photo">
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="benefits">
+        <h1>Benefícios</h1>
+        <div class="benefits-container">
+            <div class="benefit">
+                <img src="img/premium.png" alt="Premium">
+                <h4>Experiência Exclusiva</h4>
+                <p>Receba chocolates artesanais que não estão disponíveis nas lojas.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/delivery-truck.png" alt="Delivery">
+                <h4>Entrega Mensal</h4>
+                <p>Nunca fique sem seu doce favorito com nossa entrega pontual e confiável.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/cacau.png" alt="Personalização">
+                <h4>Ingredientes Premium</h4>
+                <p>Feitos com ingredientes selecionados para garantir a máxima qualidade.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/giftbox.png" alt="Presente">
+                <h4>Presente Perfeito</h4>
+                <p>Surpreenda alguém especial com um presente doce e sofisticado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup-section">
+        <h2>Seja o Primeiro a Saber!</h2>
+        <p>Inscreva-se para receber atualizações exclusivas e um desconto especial na sua primeira assinatura.</p>
+        <form id="signup-form">
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <button type="submit">Inscreva-se</button>
+        </form>
+    </section>
+
+    <!-- Seção de Preços -->
+    <section id="pricing" class="py-5 text-center bg-brown text-white">
+        <div class="container">
+            <h1 class="mb-4 display-4 font-weight-bold">Chocolatíssimo!</h1>
+            <p class="lead mb-4">Receba sabores EXCLUSIVOS, por apenas R$120/mês.</p>
+            <div class="row justify-content-center">
+                <!-- Coluna de Preços -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-light shadow-lg border-0 rounded">
+                        <div class="card-body p-4">
+                            <p class="card-text">Cada mês, receba uma deliciosa combinação de sabores refinados,
+                                elaborados com os ingredientes mais nobres e em combinações criativas, perfeitas para
+                                surpreender e encantar seu paladar. Experimente o equilíbrio perfeito entre o doce e o
+                                salgado, a frescura das frutas vermelhas com champagne, e o toque exótico do pistache
+                                com mel de flor de laranjeira.</p>
+                            <h4 class="card-price font-weight-bold">R$120/mês</h4>
+                            <a href="#contact" class="btn btn-primary btn-lg mt-3">Eleve seu Paladar!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Coluna da Imagem -->
+                <div class="col-md-4 mb-4 text-center">
+                    <img src="img/photo.jpeg" alt="Imagem de Chocolate" class="img-fluid rounded shadow-lg mb-3">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Coluna de Descrição dos Sabores -->
+        <section id="favoritos">
+            <h2>Sabores do Mês</h2>
+            <div class="favoritos-container">
+                <div class="favorito">
+                    <img src="img/caramelo.jfif" alt="Caramelo e Flor de Sal" class="favorito-image">
+                    <div class="favorito-text">
+                        <h4>Caramelo e Flor de Sal</h4>
+                        <p>A combinação perfeita de caramelo cremoso com um toque sutil de flor de sal, coberto por uma
+                            camada de chocolate amargo 70% cacau. Uma experiência equilibrada de doce e salgado que derrete
+                            na boca.</p>
+                    </div>
+                </div>
+                <div class="favorito">
+                    <img src="img/berries.jfif" alt="Berries e Champagne" class="favorito-image">
+                    <div class="favorito-text">
+                        <h4>Berries e Champagne</h4>
+                        <p>Uma ganache suave e sofisticada, com o frescor das frutas vermelhas e o aroma elegante de
+                            champagne, envolta em chocolate ao leite belga. Ideal para celebrar momentos especiais.</p>
+                    </div>
+                </div>
+                <div class="favorito">
+                    <img src="img/pistache.jfif" alt="Pistache e Mel de Flor de Laranjeira" class="favorito-image">
+                    <div class="favorito-text">
+                        <h4>Pistache e Mel de Flor de Laranjeira</h4>
+                        <p>Um recheio cremoso de pistache combinado com o doce mel de flor de laranjeira,
+                            envolvido em uma casca de chocolate branco levemente perfumada com baunilha. Originalidade e
+                            requinte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="testimonials">
+        <h1>O que nossos clientes dizem?</h1>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="img/cliente1.jpeg" alt="Cliente 1" class="testimonial-image">
+                <div class="testimonial-text">
+                    <p>“A assinatura da Chocolatier transformou meus finais de semana! Cada entrega é uma nova
+                        experiência deliciosa.”</p>
+                    <span>- Carmen</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="img/cliente2.jpeg" alt="Cliente 2" class="testimonial-image">
+                <div class="testimonial-text">
+                    <p>“Os chocolates são de qualidade excepcional. Eu simplesmente amo a surpresa mensal!”</p>
+                    <span>- Martins</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="img/cliente3.jpg" alt="Cliente 3" class="testimonial-image">
+                <div class="testimonial-text">
+                    <p>“A Chocolatier oferece o melhor serviço e os chocolates mais saborosos que já provei.”</p>
+                    <span>- Kimberly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção de Desconto -->
+    <section id="desconto" class="text-center py-5">
+        <div class="conteudo">
+            <img id="img-desconto" src="img/desconto.svg" alt="20% off" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ - Perguntas Frequentes:</h2>
+        <div class="faq-item">
+            <h3>Como funciona a assinatura?<span class="arrow">&#9660;</span></h3>
+            <p>Nossa assinatura mensal inclui uma seleção especial de chocolates entregues diretamente na sua casa.
+                Você pode escolher a frequência da entrega e personalizar sua seleção de acordo com suas
+                preferências.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Posso cancelar?<span class="arrow">&#9660;</span></h3>
+            <p>Sim, você pode cancelar sua assinatura a qualquer momento. Basta entrar em contato com nosso
+                atendimento ao cliente.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Quais são as opções de pagamento?<span class="arrow">&#9660;</span></h3>
+            <p>Aceitamos diversos métodos de pagamento, incluindo cartões de crédito e débito.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Como é feita a entrega?<span class="arrow">&#9660;</span></h3>
+            <p>A entrega é feita com total segurança e cuidado. Você receberá sua cesta no prazo estimado de 5 a 7
+                dias úteis.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Posso incluir uma mensagem personalizada?<span class="arrow">&#9660;</span></h3>
+            <p>Sim, ao finalizar a compra, você pode adicionar uma mensagem que será impressa em um cartão especial.
+            </p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/chocolatier" target="_blank" class="social-icon">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/chocolatier" target="_blank" class="social-icon">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com/chocolatier" target="_blank" class="social-icon">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+        <p>&copy; 2024 Chocolatier. Todos os direitos reservados.</p>
+    </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

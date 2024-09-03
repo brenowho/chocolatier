@@ -1,0 +1,568 @@
+/* Reset e estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #180D13;
+  font-family: Poppins, sans-serif;
+  padding-top: 60px; /* Ajuste conforme o tamanho do cabeçalho */
+}
+
+/* Cabeçalho fixo */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #180d13;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo e menu do cabeçalho */
+#logo-header {
+  height: 40px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+#menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  display: inline-block;
+}
+
+/* Estilo do contador no cabeçalho */
+#countdown-header {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.countdown-item {
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 50px;
+}
+
+.countdown-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.countdown-label {
+  font-size: 8px;
+  color: #180d13;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/* Imagem principal */
+#main-image {
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main-image:hover {
+  transform: scale(1.05); /* Aumenta o tamanho da caixa em 5% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+/* Logo na seção de chamada à ação */
+#cta-logo {
+  width: 300px;
+  height: auto;
+}
+
+/* Seção de chamada à ação */
+#cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  background: url("/img/bg.png") no-repeat center center;
+  background-size: cover; /* Garante que a imagem cubra toda a área */
+  color: #303030;
+  position: relative;
+  min-height: 500px; /* Ajuste a altura mínima conforme necessário */
+}
+
+.cta-content {
+  max-width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.cta-heading {
+  font-size: 2.5rem;
+}
+
+.cta-heading p {
+  font-size: 15px;
+}
+
+.button {
+  background: #cc941a;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  height: 70px;
+  width: 350px;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #180d13;
+}
+
+.cta-text {
+  font-size: 20px;
+  color: #f9f9f9;
+  text-align: left;
+  margin-left: 30px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+}
+
+/* Seção de benefícios */
+#benefits {
+  padding: 40px 20px;
+  background-color: #180d13;
+  color: #fff;
+}
+
+#benefits h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.benefit {
+  flex: 1 1 22%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  transform: scale(1.05); /* Aumenta o tamanho da caixa em 5% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+.benefit img {
+  height: 100px;
+  width: 100px;
+}
+
+.benefit h4 {
+  margin: 20px 0 10px;
+  color: #303030;
+}
+
+.benefit p {
+  color: #666;
+}
+
+/* Seção de Preços e Descrição */
+#pricing {
+  background-color: #180D13; /* Cor de fundo marrom */
+  color: #ffffff; /* Cor do texto branca */
+}
+
+#pricing .card {
+  background-color: #f8f9fa; /* Cor de fundo clara para o card */
+  color: #333; /* Cor do texto escuro no card */
+  border: none; /* Remove a borda do card */
+}
+
+#pricing .card-body {
+  padding: 2rem; /* Espaçamento interno do card */
+}
+
+#pricing .card-title {
+  font-size: 1.5rem; /* Tamanho da fonte do título do card */
+  margin-bottom: 1rem; /* Espaçamento inferior do título */
+}
+
+#pricing .card-text {
+  font-size: 1rem; /* Tamanho da fonte do texto do card */
+  margin-bottom: 1.5rem; /* Espaçamento inferior do texto */
+}
+
+#pricing .card-price {
+  font-size: 1.75rem; /* Tamanho da fonte do preço */
+  font-weight: bold; /* Peso da fonte em negrito */
+  margin-bottom: 1.5rem; /* Espaçamento inferior do preço */
+}
+
+#pricing .btn-primary {
+  background-color: #cc941a; /* Cor de fundo do botão */
+  border: none; /* Cor da borda do botão */
+  font-weight: bold;
+}
+
+#pricing .btn-primary:hover {
+  background-color: #180D13; /* Cor de fundo do botão ao passar o mouse */
+  border: none; /* Cor da borda do botão ao passar o mouse */
+}
+
+/* Descrição dos Sabores */
+#flavors-description {
+  background-color: #f8f9fa; /* Cor de fundo clara para a seção de sabores */
+  color: #333; /* Cor do texto escuro */
+}
+
+#flavors-description h3 {
+  font-size: 2rem; /* Tamanho da fonte do título da seção */
+  margin-bottom: 1.5rem; /* Espaçamento inferior do título */
+}
+
+.flavor-description {
+  margin-bottom: 1.5rem; /* Espaçamento inferior entre os sabores */
+}
+
+.flavor-description h4 {
+  font-size: 1.25rem; /* Tamanho da fonte do subtítulo dos sabores */
+  margin-bottom: 0.5rem; /* Espaçamento inferior do subtítulo */
+}
+
+.flavor-description p {
+  font-size: 1rem; /* Tamanho da fonte da descrição dos sabores */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+/* Imagem e Botão */
+#pricing img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#pricing .btn-primary {
+  margin-top: 1rem; /* Espaçamento superior do botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #pricing .card-body {
+      padding: 1.5rem; /* Ajuste no espaçamento interno do card em telas menores */
+  }
+
+  #pricing .card-title {
+      font-size: 1.25rem; /* Ajuste no tamanho da fonte do título do card */
+  }
+
+  #pricing .card-text {
+      font-size: 0.9rem; /* Ajuste no tamanho da fonte do texto do card */
+  }
+
+  #pricing .card-price {
+      font-size: 1.5rem; /* Ajuste no tamanho da fonte do preço */
+  }
+
+  #flavors-description h3 {
+      font-size: 1.75rem; /* Ajuste no tamanho da fonte do título da seção */
+  }
+
+  .flavor-description h4 {
+      font-size: 1.125rem; /* Ajuste no tamanho da fonte do subtítulo dos sabores */
+  }
+}
+
+
+/* Estilos gerais da seção Favoritos */
+#favoritos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#favoritos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.favoritos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.favoritos-container .button{
+  color: #303030;
+  width: 1000px;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo dos itens favoritos */
+.favorito {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorito:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorito-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f4b41a;
+}
+
+.favorito-text {
+  padding: 20px;
+  color: #333;
+}
+
+.favorito-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.favorito-text span {
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Seção de Testemunhos */
+#testimonials {
+  padding: 40px 0px;
+  background-color: #1d1d1f;
+}
+
+#testimonials h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  color: #333;
+}
+
+.testimonial-text p {
+  margin: 0;
+}
+
+.testimonial-text span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Seção FAQ */
+#faq {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #180d13;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-item h3 {
+  cursor: pointer;
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  color: #180d13;
+}
+
+.faq-item p {
+  display: none;
+  padding: 0 15px 15px;
+  background-color: #fff;
+  margin: 0;
+  color: #777;
+}
+
+.faq-item.active p {
+  display: block;
+}
+
+.faq-item .arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Seção de captura de leads */
+#signup-section {
+  background-color: #1d1d1f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+#signup-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#signup-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+#signup-form button {
+  background-color: #f4b41a;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#signup-form button:hover {
+  background-color: #180D13;
+  color: #f4b41a;
+}
+
+/* Seção de redes sociais */
+#social-media {
+  text-align: center;
+  padding: 30px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: auto;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/* Rodapé */
+#footer {
+  background-color: #303030;
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#footer a:hover {
+  color: #cccccc;
+}
